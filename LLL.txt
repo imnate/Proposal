@@ -1,0 +1,29 @@
+if [ -f ~/.bashrc ]; then
+	source ~/.bashrc
+fi
+[ -f ~/.git-bash-completion.sh ] && . ~/.git-bash-completion.sh
+
+export CLICOLOR='true'
+export LSCOLORS="fxexbxdxcxegedabagacad"
+PS1='\[\e[0;33m\]\u\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\] \$ '
+
+set encoding=utf-8
+set fileencodings=utf-8,cp950
+ 
+syntax on
+set ai
+set shiftwidth=4
+set ruler
+set backspace=2
+set ic
+set hlsearch
+set incsearch
+set smartindent
+set confirm
+set history=200 
+set cursorline
+set number
+:nohl
+:set nowrap
+ 
+colorscheme torte
